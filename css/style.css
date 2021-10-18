@@ -1,0 +1,122 @@
+/* Greal */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body{
+    background-image: url('../img/fundo.jpg');
+    background-size: cover; /*centralzia a imagem*/
+    background-position-y: -200px; /*posicionamento de eixo da imagem*/
+}
+
+textarea:focus, input:focus{
+    outline: none; /*tira as bordas de seleção quando clica no input*/
+}
+
+a, label{
+    font-size: .8rem; /*16 x 0.8 = tamanho da fonte em pixel (relativo a fonte do root element)*/
+    
+}
+
+a:hover{
+    color: #08558b;
+}
+
+/*Conatiner login*/
+
+#loginContainer{
+    background-color: #FFF;
+    width: 400px;
+    margin-left: auto;   /* Centraliza o elemento na tela!*/ 
+    margin-right: auto;  /* Centraliza o elemento na tela!*/
+    padding: 20px 30px;  /* Afasta os elementos da borda*/
+    margin-top: 10vh;    /* vh (view height) = medida proporcional a tela do usuário * 10vh = 10% da tela do usuário*/
+    border-radius: 10px; /* Arredondar os cantos do container*/
+    text-align: center;  /* Alinha os textos ao centro do container*/
+}
+
+/*Formulário*/
+
+form{ /*afastando os outros elementos do formulário*/
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input{
+    display: block; /*definir as labels e inputs como elemntos de bloco*/
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+    padding: 10px;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid #08558b;
+}
+
+#forgot-pass{
+    text-align: right;/*tag a tem display inline por dafault(definir display block para ser afetado pela alteração)*/
+    display: block;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #08558b;
+    cursor: pointer; /*mostra a mãozinha ao inserir o cursor do mouse no botão*/
+}
+
+input[type="submit"]:hover{
+    background-color: #1b223c;
+    transition: .5s;/*tempo de transição da animação*/
+}
+
+#ssocialContainer, #socialContainer p{
+    margin-bottom: 20px;
+}
+
+#socialContainer i{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;/*line-height da altura do elemento para centralizar os ícones */
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.fa-linkedin{
+    background-color: #0077b5;
+}
+
+/*Register*/
+
+#registerContainer p {
+    margin-bottom: 10px;
+}
